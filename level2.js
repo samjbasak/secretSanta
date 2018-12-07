@@ -5,9 +5,9 @@ Level 2
 Part one:
 Look at the assignSecretSanta function, I've started this for you, you can choose to use what I've given you
 or try again for yourself. This function wants to take a shuffleArray and check that no one gets themself, if they do
-run shuffleArray again, and check again.
+run shuffleArray again, and check again. Once no one has themselves return this combination.
 
-Before you start see what happens if you give an array of names as the parameter to the function secretSanta.
+Before you start see what happens if you give an array of names as the parameter to the function shuffleArray.
 
 Part two:
 Once you've done this edit the function printSecretSanta so it console.logs a list of who has who for Secret Santa.
