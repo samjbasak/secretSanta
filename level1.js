@@ -40,28 +40,30 @@ const shuffleArray = (myArray) => {
 
 
 const assignSecretSanta = (names) => {
-    possSecretSanta = shuffleArray(namesOfParticipants)
+    let possSecretSanta = shuffleArray(names)
     while (true) {
         possSecretSanta = shuffleArray(possSecretSanta[0])
-        checker = true
-        for (i=0;i<possSecretSanta[0].length;i++) {
-            if (possSecretSanta[0][i] === possSecretSanta[1][i]) {
+        let checker = true;
+        let buyer = possSecretSanta[0]
+        let receiever = possSecretSanta[1]
+        console.log(possSecretSanta)
+        for (i = 0; i < buyer.length; i++) {
+            if (buyer[i] === receiever[i]) {
                 checker = false
             }
         }
         if (checker) {
             return possSecretSanta
         }
-        
-    }     
-}        
-          
-const printSecretSanta = (secretSantaPeople) => {
-    return "Fill in this gap"
+
+    }
 }
 
-console.log(printSecretSanta(['Sam', 'Dan', 'Stuart', 'Chris K', 'Rudolph', 'Cliff']))
-
-
-
-
+const printSecretSanta = (secretSantaPeople) => {
+    let actSecretSanta = assignSecretSanta(secretSantaPeople)
+    let buyer = actSecretSanta[0]
+    let receiver = actSecretSanta[1]
+    for (i=0; i<buyer.length;i++){
+        console.log(`${buyer[i]} is buying for ${receiver[i]}`)
+    } 
+}
