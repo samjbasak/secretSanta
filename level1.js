@@ -44,7 +44,7 @@ const assignSecretSanta = (names) => {
     while (true) {
         possSecretSanta = shuffleArray(possSecretSanta[0])
         checker = true
-        for (i=0;i<possSecretSanta.length;i++) {
+        for (i=0;i<possSecretSanta[0].length;i++) {
             if (possSecretSanta[0][i] === possSecretSanta[1][i]) {
                 checker = false
             }
