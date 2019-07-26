@@ -8,7 +8,7 @@ Before you start see what happens if you give an array of names as the parameter
 
 If you finish this try making a class that helps create an object for everyone involved, this could include who
 the person has, what they would like, etc for example who is involved. Also include methods that get
-different bits of information that might be useful.
+different bits of information that might be quite useful.
 
 */
 
